@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+  <meta charset="UTF-8">
+  <title>Navigation Bar</title>
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300">
+      <link rel="stylesheet" href="blog.css">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+ 
+<body>
+
+    <nav class="navbar">
+        <div class="content">
+          <div class="logo">
+            <h3>Home<span>Decor</span></h3>
+          </div>
+          <ul class="menu-list">
+            <div class="icon cancel-btn">
+              <i class="fas fa-times"></i>
+            </div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" >About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+      <div class="banner"></div>
+      <div class="about">
+        <div class="content">
+          <div class="title">Responsive Sticky Navigation Menu Bar on Scroll using HTML CSS & JavaScript</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo impedit atque consequatur! Iusto distinctio temporibus repellendus labore odit adipisci harum ipsa beatae natus, eum eius, hic aperiam odio! Quasi molestias magnam illo voluptatem iusto ipsam blanditiis, tempore cumque reiciendis quaerat vero tenetur, sequi dolores libero voluptas vitae voluptate placeat dolorum modi ipsa nisi repellat facilis aliquam asperiores. Aut nam repellat harum quas saepe dolorum voluptates ratione, itaque consectetur explicabo a facilis rem mollitia maxime repudiandae fuga reprehenderit, odio cum incidunt labore molestiae quis non perferendis ipsam. Illum, in, deserunt. Ipsa.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit hic excepturi nobis id, eos dolor libero, nam assumenda, at culpa quos perspiciatis ratione ea modi! Natus sapiente a, explicabo sit quisquam eligendi esse provident eos enim doloremque blanditiis aut placeat veniam, libero nostrum quae. Ipsam, iste reprehenderit minima accusantium illo dolorem recusandae, ipsa autem quidem reiciendis a mollitia sit tenetur.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint doloremque perspiciatis voluptate ducimus reiciendis rem expedita voluptatibus dicta harum, quo, aspernatur maiores possimus officia quod? Aliquid molestiae illo sequi, tempora perferendis at incidunt nam porro voluptatibus, iste aperiam blanditiis adipisci ducimus repellendus distinctio nostrum ipsum! Voluptas facilis cum, atque tempora magnam beatae sequi! Doloribus expedita, cupiditate quo quod nemo aliquam, mollitia cum ea nam ullam soluta temporibus! Repudiandae incidunt consequatur distinctio deleniti obcaecati sit facilis unde, quisquam veniam ad doloribus!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet veniam error deleniti cum beatae non assumenda illum est dolores, possimus suscipit quibusdam eveniet id fuga dolore unde modi, sapiente voluptas. Mollitia veritatis explicabo cumque enim quia voluptates provident totam perferendis excepturi animi assumenda optio minus laudantium eveniet possimus amet blanditiis dolore in fuga atque, earum officia tempora quam similique est.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ad sunt distinctio quidem incidunt cupiditate sequi deleniti, corrupti officia nam veritatis facilis veniam dolorum enim nisi ipsum dolor rem! Doloribus, eaque odit voluptatem iste laboriosam provident facere quo. Cum repellat pariatur, error ratione repellendus nisi quam culpa tempora facere in atque nesciunt, magni est aliquid unde soluta optio! Dolore pariatur, quaerat quo in cupiditate deleniti exercitationem. Facilis suscipit corporis unde aut minima nihil, eum molestias itaque, tenetur, beatae ipsa at!</p>
+        </div>
+      </div>
+      <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = ()=>{
+          navbar.classList.add("show");
+          menuBtn.classList.add("hide");
+          body.classList.add("disabled");
+        }
+        cancelBtn.onclick = ()=>{
+          body.classList.remove("disabled");
+          navbar.classList.remove("show");
+          menuBtn.classList.remove("hide");
+        }
+        window.onscroll = ()=>{
+          this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+      </script>
+
+
+
+
+
+
+
+
+<footer class="footer-distributed">
+ 
+    <div class="footer-left">
+    
+    <h3>Home<span>Decor</span></h3>
+    
+    <p class="footer-links">
+    <a href="index.html">Home</a>
+    ·
+    <a href="blog.html\">Blog</a>
+    ·
+    <a href="about.html">About</a>
+    ·
+    <a href="contact.html">Contact</a>
+    </p>
+    
+    <p class="footer-company-name">phoebemonicah &copy; 2021</p>
+    </div>
+    
+    <div class="footer-center">
+    
+    <div>
+    <i class="fa fa-map-marker"></i>
+    <p><span>01000 OAU road</span> Thika, Kenya</p>
+    </div>
+    
+    <div>
+    <i class="fa fa-phone"></i>
+    <p>+254 707421025</p>
+    </div>
+    
+    <div>
+    <i class="fa fa-envelope"></i>
+    <p><a href="mailto:support@company.com">phoebemonicah@gmail.com</a></p>
+    </div>
+    
+    </div>
+    
+    <div class="footer-right">
+    
+    <p class="footer-company-about">
+    <span>About Home Decor</span>
+   Home decor is all about home organization and cleaning,it also givea you a touch on how to make your house look superb and absolutely elegant.
+    </p>
+    
+    <div class="footer-icons">
+    
+    <a href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjQwNTMxODM2LCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D"><i class="fa fa-facebook"></i></a>
+    <a href="mobile.twitter.com/i/flow/login"><i class="fa fa-twitter"></i></a>
+    <a href="https://ke.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/phoebe.monicah/"><i class="fa fa-instagram"></i></a>
+    
+    </div>
+    
+    
+    
+    </footer>
+ 
+</body>
+ 
+</html>

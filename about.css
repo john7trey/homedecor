@@ -81,7 +81,7 @@ body {
   color: #007bff;
 }
 .banner{
-  background: url("images/about.jpg") no-repeat;
+  background: url("about.jpg") no-repeat;
   height: 100vh;
   background-size: cover;
   background-position: center;

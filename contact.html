@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+  <meta charset="UTF-8">
+  <title>Navigation Bar</title>
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300">
+      <link rel="stylesheet" href="contact.css">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+ 
+<body>
+
+  <!--main menu-->
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <h3>Home<span>Decor</span></h3>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" >About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="banner"></div>
+  <div class="about">
+    <div class="content">
+      
+  </div>
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+
+<!--main menu ends here-->
+
+ <!--contacts quote starts here-->
+     <div class="contactquote">
+         <P class="contactp">
+             <strong>
+                 Design is coming to grip with one's real lifestyle,one's real place in the world 
+                 .Rooms should not be put together for show but to nourish one's well being.
+             </strong>
+         </P>
+     </div>
+ <!--contacts quote ends here-->
+
+  <!--content code snippet starts here-->
+
+<div class="main">
+<div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">oau road, section nine</div>
+          <div class="text-two">Thika ,Kiambu 01000</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">+254707421025</div>
+          <div class="text-two">+254720081554</div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">phoebemonicah@gmail.com</div>
+          <div class="text-two">homedecor@gmail.com</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+        <p>If you have any  quries related to my work, you can send me message from here. It's my pleasure to help you.</p>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Enter your name">
+        </div>
+        <div class="input-box">
+          <input type="email" placeholder="Enter your email">
+        </div>
+        <div class="input-box message-box">
+          <input type="text" placeholder="write message">
+        </div>
+        <div class="button">
+          <input type="button" value="Send Now" >
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+  </div>
+
+  <!--contents code snippets ends here-->
+
+
+
+
+
+<!--footer snippets starts here-->
+  <footer class="footer-distributed">
+ 
+    <div class="footer-left">
+    
+    <h3>Home<span>Decor</span></h3>
+    
+    <p class="footer-links">
+    <a href="index.html">Home</a>
+    ·
+    <a href="blog.html\">Blog</a>
+    ·
+    <a href="about.html">About</a>
+    ·
+    <a href="contact.html">Contact</a>
+    </p>
+    
+    <p class="footer-company-name">phoebemonicah &copy; 2021</p>
+    </div>
+    
+    <div class="footer-center">
+    
+    <div>
+    <i class="fa fa-map-marker"></i>
+    <p><span>01000 OAU road</span> Thika, Kenya</p>
+    </div>
+    
+    <div>
+    <i class="fa fa-phone"></i>
+    <p>+254 707421025</p>
+    </div>
+    
+    <div>
+    <i class="fa fa-envelope"></i>
+    <p><a href="mailto:support@company.com">phoebemonicah@gmail.com</a></p>
+    </div>
+    
+    </div>
+    
+    <div class="footer-right">
+    
+    <p class="footer-company-about">
+    <span>About Home Decor</span>
+   Home decor is all about home organization and cleaning,it also givea you a touch on how to make your house look superb and absolutely elegant.
+    </p>
+    
+    <div class="footer-icons">
+    
+    <a href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjQwNTMxODM2LCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D"><i class="fa fa-facebook"></i></a>
+    <a href="mobile.twitter.com/i/flow/login"><i class="fa fa-twitter"></i></a>
+    <a href="https://ke.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+    <a href="instagram"><i class="fa fa-instagram"></i></a>
+    
+    </div>
+    
+    
+    
+    </footer>
+ 
+</body>
+ 
+</html>

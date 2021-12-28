@@ -1,2 +1,1 @@
-# homedecor
-site entailing of interior design offering service
+# homedecor is a personal site that is about home decoration and organization.

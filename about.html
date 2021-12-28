@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+  <title>home decor</title>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>home decor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300">
+ <link rel="stylesheet" href="about.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+ 
+<body>
+
+  <!--main menu navigation bar code snippet-->
+ 
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <h3>Home<span>Decor</span></h3>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" >About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="banner"></div>
+  <div class="about">
+    <div class="content">
+      <div class="title">
+    </div>
+  </div>
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+
+<!--navigation bar code snippet ends here-->
+
+<!--contacts quote starts here-->
+<div class="aboutquote">
+    <P class="aboutp">
+        <strong>
+            "Decoration is like music.Harmony is what we constantly strive for,at home we want
+            a peaceful atmosphere where the objects are the notes and nothing is off-key."</br><em>
+                Charlotte Moss
+            </em>
+        </strong>
+    </P>
+</div>
+<!--contacts quote ends here-->
+
+
+
+<div class="about-section">
+    <h1 class="kiti">About Home decor</h1>
+    <p>home decor is an organization that offers home decoration services as well as providing informoation and 
+        giving advice on how to make your house stand out ,and totally appeasing.We have a youtube chanel and you 
+        can click on this link to to access it <a href="https://www.youtube.com/c/PhoebeMonicah">phoebemonicah</a>
+        .Home decor also deals with helping people with hoarding disorder, as a way of giving back to the community.
+        in this site ypou will find the best content related to how you can perfectly organize your home and giving it the 
+        perfect touch,as we believe that the colors and design a home should be a reflection of the people who live inside.
+        We started home decor has a youtube channel but we later dcided to come up with this websites as it can be accessed easily
+        and also save the users data, we also decided to come up with this website as a means of reaching out to the hoarding disordered
+        persons and provide them with free services. we also offer other services which you can check on the services page. 
+    </p>
+    
+  </div>
+
+  <div class = "about-wrapper">
+    <div class = "about-left">
+      <div class = "about-left-content">
+        <div>
+          <div class = "shadow">
+            <div class = "about-img">
+              <img src = "images/owner.jpg" alt = "foundeer of home decor">
+            </div>
+          </div>
+
+          <h2>Phoebe Monicah</h2>
+          <h3>founder of Home Decor</h3>
+        </div>
+
+        <ul class = "icons">
+          <li><i class = "fab fa-facebook-f"></i></li>
+          <li><i class = "fab fa-twitter"></i></li>
+          <li><i class = "fab fa-linkedin"></i></li>
+          <li><i class = "fab fa-instagram"></i></li>
+        </ul>
+      </div>
+      
+    </div>
+
+    <div class = "about-right">
+      <h1>Hello<span>!</span></h1>
+      <h2>Here's who I am & what I do</h2>
+      <!--
+      <div class = "about-btns">
+        <button type = "button" class = "btn btn-pink">resume / CV</button>
+        <button type = "button" class = "btn btn-white">Git hub</button>
+      </div>
+    -->
+
+      <div class = "about-para">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, aspernatur possimus ullam quaerat, laboriosam ex voluptate aliquid laborum, obcaecati ratione accusamus! Ea nisi modi dolor nam numquam? Temporibus, molestias amet.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus iure tempora alias laudantium sapiente impedit!</p>
+      </div>
+    </div>
+  </div>
+
+  <!--footer with another navigation link-->
+
+ <footer class="footer-distributed">
+ 
+ <div class="footer-left">
+ 
+ <h3>Home<span>Decor</span></h3>
+ 
+ <p class="footer-links">
+ <a href="index.html">Home</a>
+ ·
+ <a href="blog.html\">Blog</a>
+ ·
+ <a href="about.html">About</a>
+ ·
+ <a href="contact.html">Contact</a>
+ </p>
+ 
+ <p class="footer-company-name">phoebemonicah &copy; 2021</p>
+ </div>
+ 
+ <div class="footer-center">
+ 
+ <div>
+ <i class="fa fa-map-marker"></i>
+ <p><span>01000 OAU road</span> Thika, Kenya</p>
+ </div>
+ 
+ <div>
+ <i class="fa fa-phone"></i>
+ <p>+254 707421025</p>
+ </div>
+ 
+ <div>
+ <i class="fa fa-envelope"></i>
+ <p><a href="mailto:support@company.com">phoebemonicah@gmail.com</a></p>
+ </div>
+ 
+ </div>
+ 
+ <div class="footer-right">
+ 
+ <p class="footer-company-about">
+ <span>About Home Decor</span>
+Home decor is all about home organization and cleaning,it also givea you a touch on how to make your house look superb and absolutely elegant.
+ </p>
+ 
+ <div class="footer-icons">
+ 
+ <a href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjQwNTMxODM2LCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D"><i class="fa fa-facebook"></i></a>
+ <a href="mobile.twitter.com/i/flow/login"><i class="fa fa-twitter"></i></a>
+ <a href="https://ke.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+ <a href="https://www.instagram.com/phoebe.monicah/"><i class="fa fa-instagram"></i></a>
+ 
+ </div>
+ 
+ 
+ 
+ </footer>
+ 
+ 
+</body>
+ 
+</html>
